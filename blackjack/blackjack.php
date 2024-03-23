@@ -49,10 +49,12 @@
         echo "<p> La somma è: $somma_temp2 </p>"; 
         echo "<p> Carte prima di sballare : $i, carta che ti ha fatto sballare: $numero_casuale</p>"; 
         
-        if ($somma_temp1 > $somma_temp2){
-            echo "<p> Ha vinto <b>Il Banco.</b></p>"; 
+        if($giocatore_temp > $banco_temp){
+            echo "Il vincitore è: <b>GIOCATORE</b>"; 
+        } else if($giocatore_temp == $banco_temp){
+            echo "<b>PARITA'</b>"; 
         } else {
-            echo "<p> Ha vinto <b>Il Giocatore.</b></p>"; 
+            echo "Il vincitore è: <b>BANCO</b>"; 
         }
 
         ?>
