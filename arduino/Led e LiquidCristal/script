@@ -1,0 +1,39 @@
+// includo libreria
+#include <LiquidCrystal_I2C.h>
+LiquidCrystal_I2C lcd1(0x21,16,2);
+void setup()
+{
+  // dichiarazione pin Led
+  pinMode(2,OUTPUT); 
+  pinMode(3,OUTPUT);
+  // accendi lcd
+  lcd1.init();
+  lcd1.backlight(); 
+}
+
+void loop()
+{
+  // accendo led verde
+  digitalWrite(2,HIGH);
+  // posiziono il cursore per scrivere
+  lcd1.setCursor(0,0); 
+  // scrivo sul lcd
+  lcd1.print("LED VERDE"); 
+  lcd1.setCursor(0,1);
+  lcd1.print("LED ROSSO SPENTO");
+  // aspetto 2 secondi
+  delay(2000); // in millisecondo 2 secondi sono 2000ms
+  // spengo led verde e accendo led rosso
+  lcd1.clear(); 
+  digitalWrite(2,LOW);
+  digitalWrite(3,HIGH);
+  lcd1.setCursor(0,1); 
+  lcd1.print("LED ROSSO"); 
+  lcd1.setCursor(0,0);
+  lcd1.print("LED VERDE SPENTO"); 
+  // aspetto 2 secondi
+  delay(2000);
+  lcd1.clear();
+  // spengo led rosso 
+  digitalWrite(3,LOW);
+}
