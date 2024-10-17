@@ -1,0 +1,10 @@
+    /* Creare una classe Contatto con attributi privati cognome, nome e telefono e con i metodi pubblici
+    get, set e toString.
+    Creare una classe Rubrica con un arraylist di oggetti di classe Contatto, con cognomi e nomi
+    conservati in maiuscolo.
+    La classe Rubrica deve consentire alla classe main
+    di inserire un nuovo contatto,
+    di cancellarne uno dato il cognome e il nome,
+    di modificarne uno dati cognome e nome
+    di stampare tutta rubrica.
+     */

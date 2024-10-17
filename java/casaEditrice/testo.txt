@@ -1,0 +1,11 @@
+Si vuole gestire il catalogo delle riviste di una casa editrice.
+Rivista: titolo, prezzo, periodicità (settimanale, bisettimanale, mensile, bimensile,…)
+
+Catalogo con arraylist consente di
+aggiungere una rivista con Titolo in MAIUSCOLO,
+modificare il prezzo dato il titolo,
+modificare la peridicità dato il titolo,
+stampare le info di una rivista dato il titolo,
+cancellare una rivista dato il titolo,
+stampare il catalogo delle riviste
+La classe Main fornisce il menù per eseguore le operazioni sopra.

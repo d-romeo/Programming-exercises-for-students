@@ -1,0 +1,11 @@
+Scrivere un programma per la gestione di due tipi di persone presenti in un ospedale: i medici e i pazienti.
+Sia i pazienti che i medici sono caratterizzati da: cognome, nome, codice fiscale.
+I pazienti sono anche caratterizzati da un attributo malattia; mentre i medici sono caratterizzati anche da un attributo specializzazione.
+Scrivere un programma per la ‘gestione’ di medici e pazienti.
+
+- inserire un nuovo paziente o medico.
+- eliminare un paziente o medico dato il cod fisc
+- stampare tutti i medici
+- stampare tutti i pazienti
+
+caricare e salvare la lista delle persone a inizio e fine programma rispettivamente.
